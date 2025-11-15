@@ -193,3 +193,15 @@ body{
     border-radius: 5px;
     font-size: 1vw;
 }
+
+.ver-mais-button:hover{
+    background-color: darkorange;
+}
+
+#social-media-container{
+    background-color: black;
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+}
