@@ -157,9 +157,9 @@ body{
 }
 
 .product-container img{
-    max-width: 100%;
-    position: relative;
-    top: 25px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .category-text{
@@ -248,67 +248,58 @@ a {
   font-size: 1vw;
 }
 
-/* ----- MOBILE (TELAS ATÉ 600PX) ----- */
 @media (max-width: 600px) {
 
-  /* NAVBAR */
-  .nav-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  /* Zera qualquer deslocamento lateral */
+  * {
+    max-width: 100% !important;
+    box-sizing: border-box;
   }
 
-  .nav-list li a {
-    font-size: 4vw !important;
-    padding: 10px;
-  }
-
-  /* TEXTO DA IMAGEM (CAPTION) */
-  #caption-1 {
-    font-size: 6vw;
-    left: 10%;
-    top: 30%;
-  }
-
-  /* PRODUTOS */
   .featured-wrapper {
     flex-direction: column;
     align-items: center;
+    padding: 0;              /* remove espaço lateral */
+    margin: 0;               /* remove margens que empurram */
+    width: 100%;
   }
 
   .product-container {
+    width: 90% !important;
     max-width: 90% !important;
-    width: 90%;
-    margin-bottom: 25px;
+    margin: 10px auto !important;
   }
 
+  /* REMOVE o top: 25px das imagens */
   .product-container img {
-    top: 10px;
+    position: static !important;
+    margin-top: 0 !important;
   }
 
+  /* texto */
   .category-text {
     font-size: 6vw !important;
+    margin: 10px 0 0 0 !important;
   }
 
+  /* botão */
   .ver-mais-button {
     font-size: 4vw !important;
-    padding: 12px 20px;
   }
 
-  /* FORMULÁRIO FIXO */
-  .form-container {
-    width: 90%;
-    right: 5%;
+  /* slide / imagem grande */
+  #main-banner, 
+  #main-banner img {
+    width: 100% !important;
+    height: auto !important;
   }
+}
 
-  #submit-btn {
-    width: 100%;
-    margin-left: 0;
-  }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
-  /* ÍCONES LATERAIS */
-  #social-media-container {
-    transform: scale(0.8);
-    bottom: 15%;
-  }
+#caption-1 {
+  max-width: 90%;
 }
