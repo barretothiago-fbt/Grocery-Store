@@ -1,0 +1,104 @@
+body{
+    margin:auto
+}
+
+.nav-wrapper{
+    background-color: #00b300;
+    padding: 5px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-list li{
+    display: inline;
+    margin: 0px;
+}
+
+.nav-list li a:hover {
+    background-color: darkorange;
+}
+ 
+.nav-list li a:active {
+    background-color: chartreuse;
+}
+
+.nav-list li a:visited {
+    background-color: darkviolet;
+}
+
+.nav-item{
+    color: aliceblue;
+}
+
+.form-container{
+    background-color: #323232;
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: fixed;
+    bottom: -218px;
+    right: 0;
+    transition: .5s;
+}
+
+.form-container:hover{
+    bottom: 0;
+}
+
+#email-icon{
+    width: 35px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 35px
+}
+
+.form-head-container{
+    background-color: #00b300;
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 15px;
+    height: 35px;
+}
+
+.form-item{
+    margin-left: 40px;
+    color: white;
+    padding-left: 0px;
+}
+
+#subject{
+    height: 50px;
+    width: 172px;
+}
+
+#fale-conosco{
+    color: white;
+    margin-left: 75px;
+    font-size: 22px;
+    margin-top: 5.5px;
+}
+
+#submit-btn{
+    background-color: #4caf50;
+    border: none;
+    padding: 7px 12px;
+    margin: 9px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 100px;
+}
