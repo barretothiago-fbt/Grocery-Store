@@ -248,62 +248,67 @@ a {
   font-size: 1vw;
 }
 
-/* ----- RESPONSIVIDADE PARA TELAS PEQUENAS ----- */
+/* ----- MOBILE (TELAS ATÉ 600PX) ----- */
 @media (max-width: 600px) {
 
-  /* NAVIGATION */
+  /* NAVBAR */
   .nav-list {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
 
-  a {
-    font-size: 4vw; /* aumenta o texto no mobile */
+  .nav-list li a {
+    font-size: 4vw !important;
+    padding: 10px;
   }
 
-  /* CAPTION (TEXTO DO SLIDE) */
+  /* TEXTO DA IMAGEM (CAPTION) */
   #caption-1 {
     font-size: 6vw;
     left: 10%;
     top: 30%;
   }
 
-  /* CONTAINERS DE PRODUTOS */
+  /* PRODUTOS */
   .featured-wrapper {
     flex-direction: column;
     align-items: center;
   }
 
   .product-container {
-    max-width: 80%;
-    margin-bottom: 20px;
+    max-width: 90% !important;
+    width: 90%;
+    margin-bottom: 25px;
+  }
+
+  .product-container img {
+    top: 10px;
   }
 
   .category-text {
-    font-size: 5vw;
+    font-size: 6vw !important;
   }
 
   .ver-mais-button {
-    padding: 10px 15px;
-    font-size: 4vw;
+    font-size: 4vw !important;
+    padding: 12px 20px;
   }
 
   /* FORMULÁRIO FIXO */
   .form-container {
-    width: 80%;
-    right: 10%;
-  }
-  
-  #submit-btn {
-    margin-left: 0;
-    width: 100%;
+    width: 90%;
+    right: 5%;
   }
 
-  /* ÍCONES LATERAIS DE SOCIAL MEDIA */
+  #submit-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* ÍCONES LATERAIS */
   #social-media-container {
-    right: 0;
-    bottom: 10%;
-    transform: scale(0.9);
+    transform: scale(0.8);
+    bottom: 15%;
   }
 }
