@@ -1,5 +1,5 @@
 body{
-    margin:auto
+    margin:auto;
 }
 
 .nav-wrapper{
@@ -9,6 +9,7 @@ body{
     position: sticky;
     top: 0;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .nav-list{
@@ -204,4 +205,45 @@ body{
     position: fixed;
     right: 0;
     bottom: 50%;
+}
+
+#social-media-container:hover{
+    cursor: pointer;
+}
+
+#facebook-icon-container{
+    background-color: #395598;
+    padding: 5px;
+    transition: .5s;
+}
+
+#facebook-icon-container:hover{
+    padding-left: 20%;
+}
+
+#instagram-icon-container{
+    background-color: #eb4e6d;
+    padding: 5px;
+    transition: .5s;
+}
+
+#instagram-icon-container:hover{
+    padding-left: 20%;
+}
+
+#whatsapp-icon-container{
+    background-color: #25D366;
+    padding: 5px;
+    transition: .5s;
+}
+
+#whatsapp-icon-container:hover{
+    padding-left: 20%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1vw;
 }
